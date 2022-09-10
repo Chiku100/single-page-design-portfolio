@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    background-color: #fde6e6 !important;
+    padding: 2rem 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+}
+
+p {
+    opacity: 0.6;
+    font-size: 1rem;
+}
+
+header div,
+.foot div {
+    display: flex;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+}
+
+header div img,
+.foot div img {
+    cursor: pointer;
+}
+
+button {
+    text-align: center;
+    width: 10rem;
+    background-color: black;
+    color: white;
+    font-size: 15px !important;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 2rem;
+    padding: 1rem;
+}
+
+#work {
+    color: white;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+#work article {
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: start;
+}
+
+article p {
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+header button,
+section button,
+.foot button {
+    border-radius: 20px;
+}
+
+.graphic {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: #755CDE;
+}
+
+.graphic p {
+    position: relative;
+    top: 17rem;
+    left: 2rem;
+}
+
+.UI {
+    background-color: #F6A560;
+}
+
+.UI p {
+    position: relative;
+    top: 2rem;
+}
+
+.Apps {
+
+    background-color: #F39E9E;
+}
+
+.Apps p {
+    position: relative;
+    top: 2rem;
+}
+
+article img {
+    float: right;
+}
+
+.photo {
+    float: right;
+    grid-column: 5/7;
+    background-color: #61C4B7;
+}
+
+.photo p {
+    position: relative;
+    top: 5rem;
+}
+
+.illu {
+    grid-column: 3/5;
+    background-color: #EB7565;
+}
+
+.illu p {
+    position: relative;
+    top: 4rem;
+}
+
+.motion {
+    grid-column: 5/7;
+    background-color: #552049;
+}
+
+.motion p {
+    position: relative;
+    top: 4rem;
+}
+
+section {
+    margin: 5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.author {
+    text-align: left;
+    padding: 5rem;
+
+}
+
+.author img {
+    float: left;
+    width: 40%;
+    padding-right: 5rem;
+}
+
+.author div {
+    margin-top: 5%;
+    width: 80%;
+}
+
+.author button,
+.contact button {
+    background-color: #EB7565;
+    border: none;
+}
+
+.contact {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact div {
+    width: 60%;
+}
+
+.carousel-item img {
+    width: 50%;
+}
+
+.carousel-inner {
+    margin: auto;
+
+}
+
+.left {
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.right,
+.left {
+    display: inline;
+    border-radius: 50%;
+    width: 50px;
+    padding: 0;
+    height: 50px;
+    align-items: center;
+    color: white;
+    background-color: rgb(5, 5, 5);
+}
+
+@media screen and (max-width:600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 380px;
+        padding: 0;
+    }
+
+    header div,
+    .foot div {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    #work {margin: auto;
+        gap: 1rem;
+        padding: 1rem;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+    }
+    #work img{
+        width: 40%;
+    }
+    .graphic {
+        grid-row: 1/4;
+        grid-column: 1/3;
+
+    }
+
+    .illu {height: 8rem;
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+
+    .photo {
+        grid-column: 1/3;
+    }
+
+    .motion {height: 10rem;
+        grid-column: 1/3;
+    }
+
+    .UI {
+        grid-column: 1/2;
+    }
+
+    .Apps {
+        grid-column: 2/3;
+    }
+
+    #work article {
+        margin: 0;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: start;
+    }
+    section {
+        margin: 1rem 0;
+    }.author {
+        text-align: center;
+        padding: 1rem;
+    
+    }.author img {
+        float: none;
+        width: 100%;
+        
+        padding-right: 0;
+    }
+    
+    .author div {
+        margin-top: 5%;
+        width: 100%;
+    }.contact {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .author button{
+        margin: auto;
+    }.carousel-item img {
+        width: 100%;
+    }
+    .contact div{
+        width: 100%;
+    }.photo p {
+        
+        top: 4rem;
+    }
+    .motion p{
+        top: 6rem;
+    }
+    .graphic p{
+        top: 22rem;
+        left: 0;
+    }
+    .UI p{
+        top: 4rem;
+    }
+    .Apps p{
+        top: 4rem;
+    }
+}
